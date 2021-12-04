@@ -4,13 +4,14 @@ function getData() {
     .then(displayData)
 
     .catch((err) => {
-      showError(err);
+      showError("Fetch failed");
+      console.log(err);
     });
 }
 
 function retrieveData(response) {
-  if (response.status != 200) {
-    throw "Something went wrong::Error Code::" + response.status;
+  if (!response.ok) {
+    throw new Error("Something went wrong::Error Code::" + response.status);
   }
   return response.json();
 }
