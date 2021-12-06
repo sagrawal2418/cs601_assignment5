@@ -1,5 +1,5 @@
-function getData() {
-  fetch("./degrees.json")
+const getData = async() => {
+  await fetch("./degrees.json")
     .then(retrieveData)
     .then(displayData)
 
@@ -7,7 +7,7 @@ function getData() {
       showError("Fetch failed");
       console.log(err);
     });
-}
+};
 
 function retrieveData(response) {
   if (!response.ok) {
@@ -54,6 +54,7 @@ function displayData(data) {
   var divContainer = document.getElementById("showData");
   divContainer.innerHTML = "";
   divContainer.appendChild(table);
+
 }
 
 function showError(message) {

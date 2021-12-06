@@ -2,21 +2,21 @@
   "degree": [
     {
       "School": "Prince Georges Community College",
-      "Program Major": "Associate of Applied Science",
+      "Program": "Associate of Applied Science",
       "Type": "AA",
-      "Year Conferred": "2010"
+      "Year": "2010"
     },
     {
       "School": "Strayer University",
-      "Program Major": "Bachelors of Science",
+      "Program": "Bachelors of Science",
       "Type": "BS",
-      "Year Conferred": "2014"
+      "Year": "2014"
     },
     {
       "School": "Boston University",
-      "Program Major": "Masters of Science in Software Development",
+      "Program": "Masters of Science in Software Development",
       "Type": "MS",
-      "Year Conferred": "2022"
+      "Year": "2022"
     }
   ]
 }
